@@ -1,5 +1,5 @@
 const words = [
-    "das Thema", "das Theater", "Thüringen", "der Thriller", "thematisieren", "die Therapeutin",
+    "Danylo", "das Thema", "das Theater", "Thüringen", "der Thriller", "thematisieren", "die Therapeutin",
     "thematisch", "theoretisch", "der Thron", "die Thermik", "die These", "die Theke", "die Theorie",
     "das Thermometer", "die Thermoskanne", "die Theologie",
     "die Vase", "das Klavier", "der Vater", "der Vogel", "der Pullover", "vier", "voll", "vorher",
@@ -8,8 +8,9 @@ const words = [
     "der Igel", "das Klima", "die Mandarine", "die Apfelsine", "der Biber", "die Fibel", "der Kamin"
 ];
 
-// Wörter zufällig mischen
-const shuffledWords = words.sort(() => Math.random() - 0.5);
+// Sicherstellen, dass das erste Wort immer "das Thema" ist und die restlichen gemischt werden
+const firstWord = words[0]; // Erstes Wort fixieren
+const shuffledWords = [firstWord, ...words.slice(1).sort(() => Math.random() - 0.5)];
 
 let currentIndex = 0;
 let attemptsLeft = 3; // Anzahl der Versuche
