@@ -1,14 +1,7 @@
 const words = [
-    "Danylo", "das Thema", "das Theater", "Thüringen", "der Thriller", "thematisieren", "die Therapeutin",
-    "thematisch", "theoretisch", "der Thron", "die Thermik", "die These", "die Theke", "die Theorie",
-    "das Thermometer", "die Thermoskanne", "die Theologie",
-    "die Vase", "das Klavier", "der Vater", "der Vogel", "der Pullover", "vier", "voll", "vorher",
-    "die Kurve", "der Vulkan", "das Volk", "viel", "die Vitamine", "brav",
-    "die Maschine", "das Kilo", "die Praline", "das Benzin", "die Gardine", "die Musik", "prima",
-    "der Igel", "das Klima", "die Mandarine", "die Apfelsine", "der Biber", "die Fibel", "der Kamin"
+    "Danylo", "die Sonnenenergie", "die Atomenergie", "Fossile Brennstoffe", "Kohlenkraftwerk", "die Wasserenergie", "die Gravitationsenergie", "Windkraftwerk", "Stromkreis", "gefährlich", "der Kabel", "Batterie", "Akku", "Glühbirne", "Schalter", "Werkraumordnung"
 ];
 
-// Sicherstellen, dass das erste Wort immer "das Thema" ist und die restlichen gemischt werden
 const firstWord = words[0]; // Erstes Wort fixieren
 const shuffledWords = [firstWord, ...words.slice(1).sort(() => Math.random() - 0.5)];
 
